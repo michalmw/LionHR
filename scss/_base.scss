@@ -1,0 +1,563 @@
+html {
+    height: 100%;
+}
+body { 
+    color: #fff;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+body.main-logowanie { 
+    font-family: 'Open Sans', sans-serif;
+    background: url('../img/tlo.jpg') no-repeat center center;
+    position: relative;
+    height: 100%;
+}
+.form-control {
+   -webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+-o-border-radius: 0px;
+border-radius: 0px;
+}
+//góra
+.navbar-brand
+{
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+    padding-top: 15px;
+    & > img {
+        width: 160px;
+    }
+}
+.navbar-default {
+    height: 98px;
+    background: #fff;
+    box-shadow: 3.5px 6.062px 7px 0px rgba(0, 0, 0, 0.145);
+}
+
+
+
+//stopka
+footer {
+    height: 46px;
+    padding-top:6px;
+    background: $main-color;
+    width:100%;
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    
+    div:nth-of-type(1) {
+        text-align: center;
+        
+        img {
+            margin-right: 5px;
+        }
+        
+    }
+    div:nth-of-type(2) {
+      position: absolute;
+      right: 20px;
+      top: 12px;
+    }
+     a {
+        font-size: 14.5px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+}
+
+//logowanie
+.logowanie {
+    box-shadow: 3.5px 6.062px 7px 0px rgba(0, 0, 0, 0.145);
+    width: 331px;
+    margin: 0 auto;
+    margin-top: 5%;
+       h3 {
+           font-size: 18px;
+           color: #fff;
+           text-align: center;
+           text-transform: uppercase;
+       }
+       //gora div
+       & div.info {
+           background: $main-color;
+           padding-bottom: 20px;
+       }
+       //dol div
+       & div.submit {
+           background: #fff;
+           padding-bottom: 30px;
+           //opakowanie pod przycisk
+           & div {
+               padding-top: 30px;
+           }
+           button {
+               margin: 0 auto;
+               text-align: center;
+              border-style: solid;
+              border-width: 1px;
+              border-color: rgb(119, 171, 7);
+              border-radius: 2px;
+              background-color: #88c407 !important;
+              box-shadow: 1px 1.732px 0px 0px rgba(119, 171, 7, 0.392);
+              width: 211px;
+              height: 51px;
+                background-image: none;
+                margin-bottom: 10px;
+
+           }
+           
+           & a {
+               color: #cb554d;
+           }
+       }
+       
+       div.form-group {
+           padding: 5px 20px;
+           
+           label {
+               color: #fff;
+               font-size: 14px;
+               font-weight: 500;
+           }
+       }
+   
+}
+
+///header dla normlanych stron
+.navbar-default .navbar-collapse, .navbar-nav, .navbar-nav>li, .nav>li>a {
+    height: 100% !important;
+}
+.navbar-nav>li {
+    
+   display: table;
+   & a {
+    display: table-cell;
+    vertical-align: middle;
+    color: $main-color;
+    font-weight:600;           
+   }
+   & a:hover {
+       color: #404040 !important;
+   }
+   
+   
+}
+.navbar-nav>.active>a {
+          background-image: none !important;
+          background: $main-color !important;
+          color: #fff !important;
+          
+          &:hover {
+              color: #fff !important;
+          }
+}
+ table {
+     color: #000;
+ }
+ #wszyscy_kandydaci {
+     thead {
+         td {
+             font-weight: 600;
+         }
+     }
+     tr {
+         //span
+         td:nth-of-type(1) {
+             span {
+                 padding-left: 10px;
+             }
+         }
+         //flaga
+         td:nth-of-type(2) {
+             text-align: center;
+         }
+         //jezyk
+         td:nth-of-type(3) {
+             text-align: center;
+         }
+         //status
+         td:nth-of-type(4){
+             text-align: center;
+             
+             span.active {
+                 color: #0bc00b;
+                 font-style: italic;
+             }
+             span.processing {
+                 color: #1870c2;
+                 font-style: italic;
+             }
+             span.locked {
+                 color: #fe0000;
+                 font-style: italic;
+             }
+         }
+        //tabelka
+         td:nth-of-type(5) {
+//             background: rgba(170,170,170,0.2);
+         }
+         //specialisty
+         td:nth-of-type(6){
+             text-align: center;
+         }
+         //action
+         td:last-of-type {
+             text-align: right;
+             & img {
+                 cursor: pointer;
+                 margin-left: 8px;
+             }
+         }
+       
+         
+     }
+ }
+ #oferty-pracy {
+     tr {
+         td:nth-of-type(1) {
+             text-align: center;
+         }
+         td:nth-of-type(2) {
+             font-weight: 600;
+             color: $main-color;
+         }
+         td:nth-of-type(3) {
+             text-align: center;
+         }
+         td:nth-of-type(4) {
+             text-align: center;
+         }
+         td:nth-of-type(5) {
+             text-align: center;
+         }
+         td:nth-of-type(6) {
+             text-align: center;
+         }
+         td:nth-of-type(7){
+             text-align: right;
+             img {
+                 cursor: pointer;
+             }
+         }
+     }
+ }
+ .paggination {
+     color: #000;
+     text-align: center;
+     
+     span {
+         border: 1px solid #ccc;
+         padding: 4px 9px;
+         cursor: pointer;
+     }
+ }
+
+ //strona z rozmowani
+ #strona-z-rozmowami {
+     tr.cancel {
+         color: #ccc !important;
+         
+         td:nth-of-type(5) {
+             span {
+                 color: #ccc !important;
+             }
+         }
+     }
+     
+     tr {
+         td:nth-of-type(1) {
+             font-weight: 700;
+         }
+         td:nth-of-type(2) {
+             text-align: center;
+         }
+         td:nth-of-type(3) {
+             text-align: center;
+         }
+         td:nth-of-type(4) {
+             text-align: center;
+         }
+         td:nth-of-type(5) {
+             text-align: center;
+             span.active {
+                 color: #0bc00b;
+                 font-style: italic;
+             }
+             span.processing {
+                 color: #1870c2;
+                 font-style: italic;
+             }
+             span.locked {
+                 color: #fe0000;
+                 font-style: italic;
+             }
+         }
+         td:nth-of-type(6) {
+             text-align: center;
+         }
+         td:nth-of-type(7) {
+             text-align: center;
+         }
+         td:last-of-type {
+             text-align: right;
+              & img {
+                 cursor: pointer;
+                 margin-left: 8px;
+             }
+         }
+     }
+ }
+ 
+ 
+.przycisk {
+    position: fixed;
+      right: 0px;
+      top: 30%;
+      cursor: pointer;
+}
+
+// Kandydat page
+.avatar-opakowanie {
+    padding: 0px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.chat-tresc {
+    border: 1px solid #ccc;
+    height: 250px;
+    
+    div.wiadomosc-osoba {
+        padding-top: 5px;
+    }
+    p { 
+        color: #000;
+    }
+    div.wiadomosc-ja {
+        p {
+            color: #88c407;
+            text-align:right;        
+        }
+    }
+}
+.chat-wprowadz-tresc {
+    padding: 0px;
+    
+    button {
+               margin: 0 auto;
+               text-align: center;
+              border-style: solid;
+              border-width: 1px;
+              border-color: rgb(119, 171, 7);
+              border-radius: 2px;
+              background-color: #88c407 !important;
+              box-shadow: 1px 1.732px 0px 0px rgba(119, 171, 7, 0.392);
+              width: 100%;
+              height: 31px;
+                background-image: none;
+                margin-bottom: 10px;
+
+           }
+}
+.kandydat-sidebar {
+    & div {
+       padding: 0px 5px;
+       
+       & > img {
+           cursor: pointer;
+           width: 39px;;
+           text-align: center;
+       }
+    }
+    
+    & div.zalaczniki {
+        margin-top: 60px;
+        color: #000;
+        
+        & > div.zalacznik {
+          
+            div:nth-of-type(2){
+                padding-top: 15px;
+                padding-left: 3px;
+            }
+        }
+    }
+}
+.dane-kandydata {
+    color: #000;
+    h3 {
+        font-size: 32px;
+        color: #000;
+        
+        & img {
+            margin-left: 50px;
+        }
+    }
+    span {  
+        font-size: 16px;
+    }
+    
+    div.dane-personalne {
+        margin-top: 20px;
+        font-size: 15px;
+        
+        & div:nth-of-type(1) {
+            font-weight: 500;
+        }
+        
+        span {
+            color: #88c407;
+        }
+    }
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td
+    {
+        line-height: 0.6 !important;
+    }
+    h5 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+#dodaj_oferte {
+    h3 {
+        color: $main-color;
+        font-size: 30px;
+        text-align: center;
+    }
+    label {
+        
+        color: #000;
+    }
+   button.send {
+               margin: 0 auto;
+               text-align: center;
+              border-style: solid;
+              border-width: 1px;
+              border-color: rgb(119, 171, 7);
+              border-radius: 2px;
+              background-color: #88c407 !important;
+              box-shadow: 1px 1.732px 0px 0px rgba(119, 171, 7, 0.392);
+              width: 211px;
+              height: 51px;
+                background-image: none;
+                margin-bottom: 10px;
+
+           }
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  background: #88c407;
+  border-right: 1px solid #7baf0c;
+  border-top: 1px solid #7baf0c;
+  border-bottom: 1px solid #7baf0c;
+}
+.btn-file:hover {
+      background: #88c407;
+  border-right: 1px solid #7baf0c;
+  border-top: 1px solid #7baf0c;
+  border-bottom: 1px solid #7baf0c;
+  border-left: 0px;
+    filter: alpha(opacity=0.8);
+    opacity: 0.8;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+#powiadomienia-rozmowa {
+    background: rgba(255,255,255,0.85);
+    padding: 10px 0px;
+    box-shadow: 0.5px 0.866px 6.44px 0.56px rgba(0, 0, 0, 0.067);
+    
+    h3 {
+        color: #000;
+        font-size: 34px;
+    }
+     span.active {
+         color: #0bc00b;
+         font-style: italic;
+     }
+     span.processing {
+         color: #1870c2;
+         font-style: italic;
+     }
+     span.locked {
+         color: #fe0000;
+         font-style: italic;
+     }
+     
+     img.edytuj {
+         position: absolute;
+         top: 10px;
+         right: 20px;
+         cursor: pointer;
+     }
+     
+     div.informacje_dodatkowe {
+         color: #000;
+         font-size: 18px;
+         margin-top: 30px;
+         & > div:nth-child(odd) {
+             text-align: right;
+             margin-bottom: 10px;
+         }
+         & > div:nth-child(even)  {
+             text-align: left;
+             margin-bottom: 10px;
+         }
+     }
+}
+.podsumowanie_rozmowy {
+     background: rgba(255,255,255,0.85);
+     padding: 30px 5px 10px 5px;
+     margin: 0px 10px;
+     color: #000;
+     font-size: 17px;
+    box-shadow: 0.5px 0.866px 6.44px 0.56px rgba(0, 0, 0, 0.067);
+     
+     & > div:nth-of-type(1) {
+         margin-left: 0px;
+         padding: 0px;
+         
+     }
+     & > div:nth-of-type(3) {
+         margin-right: 0px;
+         padding: 0px;
+     }
+    & > div:nth-child(odd) {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+    & > div:nth-child(even) {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+}
+.container_podsumowania {
+    & > div:nth-of-type(3) >div > div:nth-child(even) {
+        text-align: right;
+    }
+}
